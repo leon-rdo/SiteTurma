@@ -1,0 +1,28 @@
+body{
+    background-color: aliceblue;
+    padding-bottom: 2vw;
+}
+#ContainerCarousel {
+    margin-top: 1rem;
+}
+.legendas {
+    background-color: rgba(0, 0, 0, 0.543);
+}
+.justify{
+    text-align: justify;
+}
+.gradient-custom {
+    background: #000000;
+    background: -webkit-linear-gradient(to right, rgb(0, 0, 0), rgb(64, 65, 65));
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(64, 65, 65))
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.834);
+    color: #ffffff;
+}
+footer a {
+    color: white !important;
+}
+.contato {
+    margin-left: 3rem;
+}
