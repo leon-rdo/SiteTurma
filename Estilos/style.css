@@ -19,6 +19,9 @@ header {
   background: -webkit-linear-gradient(to right, rgb(0, 0, 0), rgb(64, 65, 65));
   background: linear-gradient(to right, rgb(0, 0, 0), rgb(64, 65, 65));
 }
+#Title {
+  text-align: center;
+}
 footer {
   margin-top: 2rem;
   background-color: rgba(0, 0, 0, 0.834);
