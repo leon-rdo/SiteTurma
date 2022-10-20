@@ -20,8 +20,8 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-      <div class="container">
-      <a class="navbar-brand" href="../index.html"><img src="../Imagens/LogoDaCamisa.svg" alt="Logotipo da Camisa da turma" class="mh-100" style="width: auto; height: 40px;"></a>
+      <div class="container d-flex flex-row">
+      <a class="navbar-brand" href="index.html"><img src="Imagens/LogoDaCamisa.svg" alt="Logotipo da Camisa da turma" class="mh-100" style="width: auto; height: 40px;"></a>
       <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,36 +29,141 @@
       <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav me-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="../index.html" aria-current="page">Página Inicial<span class="visually-hidden">(current)</span></a>
+            <a class="nav-link active" href="index.html" aria-current="page">Página Inicial<span class="visually-hidden">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../Páginas/FORMATURA.HTML">Formatura</a>
+            <a class="nav-link" href="./Páginas/FORMATURA.HTML">Formatura</a>
           </li> 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pessoas</a>
             <div class="dropdown-menu" aria-labelledby="dropdownId">
-              <a class="dropdown-item" href="../Páginas/Alunos.html">Alunos</a>
-              <a class="dropdown-item" href="../Páginas/Professores.html">Professores</a>
+              <a class="dropdown-item" href="./Páginas/Alunos.html">Alunos</a>
+              <a class="dropdown-item" href="./Páginas/Professores.html">Professores</a>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeria</a>
             <div class="dropdown-menu" aria-labelledby="dropdownId">
-              <a class="dropdown-item" href="../Páginas/Figurinhas.html">Figurinhas</a>
-              <a class="dropdown-item" href="../Páginas/Camisas.html">Camisas</a>
-              <a class="dropdown-item" href="../Páginas/FotosTurma.html">Fotos</a>
+              <a class="dropdown-item" href="/Páginas/Figurinhas.html">Figurinhas</a>
+              <a class="dropdown-item" href="/Páginas/Camisas.html">Camisas</a>
+              <a class="dropdown-item" href="/Páginas/FotosTurma.html">Fotos</a>
             </div>
           </li>
         </ul>
         </div>
-        <a href="https://www.unama.br/" class="d-none d-sm-block d-md-block d-lg-block" target="_blank">
-          <img src="../Imagens/Unama-Sem-Fundo.png" alt="Logotipo da Unama" class="mh-100 d-none d-sm-none d-md-none d-lg-block" style="width: 150px; height: auto;">
-          <img src="../Imagens/Logo-Unama.svg" alt="Logotipo da Unama" class="mh-100 d-none d-sm-block d-md-block d-lg-none" style="width: auto; height: 50px">
+        <div class="col">
+          <a href="https://www.unama.br/" class="d-none d-sm-block d-md-block d-lg-block" target="_blank" id="logounama">
+          <img src="Imagens/Unama-Sem-Fundo.png" alt="Logotipo da Unama" class="mh-100 d-none d-sm-none d-md-none d-lg-block" style="width: 150px; height: auto;">
+          <img src="Imagens/Logo-Unama.svg" alt="Logotipo da Unama" class="mh-100 d-none d-sm-block d-md-block d-lg-none" style="width: auto; height: 50px">
         </a>
+        </div>
+        <!-- Login -->
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Entrar
+        </button>
+        <div class="modal fade" id="exampleModal" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog modal-dialog-scrollable modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Entrar</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <section class="vh-100 gradient-custom">
+                  <div class="container-fluid py-5 h-100">
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                          <div class="card-body p-2 text-center">
 
+                            <div class="mb-md-5 mt-md-4 pb-5">
+
+                              <h2 class="fw-bold mb-2 text-uppercase">Entrar</h2>
+                              <p class="text-white-50 mb-5">Entre com sua matrícula e senha!</p>
+
+                              <div>
+                                <div class="form-outline form-white mb-4">
+                                  <input SIZE=8 MAXLENGTH=8 type="text" id="matricula" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="typeTextX" class="form-control form-control-lg" name="matricula"/>
+                                  <label class="form-label" for="typeTextX">Matrícula</label>
+                                </div>
+                                <div class="form-outline form-white mb-4">
+                                  <input type="password" id="typePasswordX" class="form-control form-control-lg" SIZE=15 MAXLENGTH=15/ name="senha">
+                                  <label class="form-label" for="typePasswordX">Senha</label>
+                                </div>
+                                <!-- JavaScript para Login -->
+                                <script>
+                                  
+                              </script>
+                              </div>
+
+                              <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Esqueceu a senha?</a></p>
+
+                              <button class="btn btn-outline-light btn-lg px-5" type="submit" action="/add" method="POST" name="act" value="entrar">Entrar</button>
+
+                            </div>
+                            <div>
+                              <p class="mb-0"><a class="text-white-50 fw-bold" data-bs-toggle="modal" data-bs-target="#modalId">Registre-se aqui!</a> <br> (Somente alunos)
+                              </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">Registre-se</h5>
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <section class="vh-100 gradient-custom">
+                  <div class="container-fluid py-5 h-100">
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                          <div class="card-body p-2 text-center">
+                            <h2 class="fw-bold mb-2 text-uppercase">CADASTRAR</h2>
+                            <p class="text-white-50 mb-5 mt-2">Cadastre sua matrícula e senha!</p>
+                            <div>
+                            <div class="form-outline form-white mb-4">
+                              <input SIZE=8 MAXLENGTH=8 type="text" id="matricula" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="typeTextX" class="form-control form-control-lg" name="matricula"/>
+                              <label class="form-label" for="typeTextX">Matrícula</label>
+                            </div>
+                            <div class="form-outline form-white mb-4">
+                              <input type="password" id="typePasswordX" class="form-control form-control-lg" SIZE=15 MAXLENGTH=15/ name="senha">
+                              <label class="form-label" for="typePasswordX">Senha</label>
+                            </div>
+                            <button class="btn btn-outline-light btn-lg px-5" type="submit" action="/add" method="POST" name="act" value="entrar">Registrar</button>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </section>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
-  </header>
+</header>
   <main>
     <div class="container">
         <div class="row">
@@ -66,7 +171,7 @@
         </div>
         <div class="row">
             <div class="col-12 col-md-6">
-                <div><img src="/Imagens/Trufa-Leo-Fundo.jpeg" alt="Foto de trufa com Leonardo ao fundo" class="img-fluid"></div>
+                <div><img src="../Imagens/Carousel/TrufaLeo.jpeg" alt="Foto de trufa com Leonardo ao fundo" class="img-fluid"></div>
             </div>
             <div class="col-12 col-md-6">
                 <h1>Leonardo Costa está vendendo trufas</h1>
