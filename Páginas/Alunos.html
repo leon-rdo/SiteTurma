@@ -16,8 +16,8 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-      <div class="container d-flex flex-row">
-      <a class="navbar-brand" href="index.html"><img src="../Imagens/LogoDaCamisa.svg" alt="Logotipo da Camisa da turma" class="mh-100" style="width: auto; height: 40px;"></a>
+      <div class="container">
+      <a class="navbar-brand" href="../index.html"><img src="../Imagens/LogoDaCamisa.svg" alt="Logotipo da Camisa da turma" class="mh-100" style="width: auto; height: 40px;"></a>
       <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,119 +47,14 @@
           </li>
         </ul>
         </div>
-        <div class="col">
-          <a href="https://www.unama.br/" class="d-none d-sm-block d-md-block d-lg-block" target="_blank" id="logounama">
+        <a href="https://www.unama.br/" class="d-none d-sm-block d-md-block d-lg-block" target="_blank">
           <img src="../Imagens/Unama-Sem-Fundo.png" alt="Logotipo da Unama" class="mh-100 d-none d-sm-none d-md-none d-lg-block" style="width: 150px; height: auto;">
           <img src="../Imagens/Logo-Unama.svg" alt="Logotipo da Unama" class="mh-100 d-none d-sm-block d-md-block d-lg-none" style="width: auto; height: 50px">
         </a>
-        </div>
-        <!-- Login -->
-        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          Entrar
-        </button>
-        <div class="modal fade" id="exampleModal" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog modal-dialog-scrollable modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Entrar</h5>
-                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <section class="vh-100 gradient-custom">
-                  <div class="container-fluid py-5 h-100">
-                    <div class="row d-flex justify-content-center align-items-center h-100">
-                      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                        <div class="card bg-dark text-white" style="border-radius: 1rem;">
-                          <div class="card-body p-2 text-center">
 
-                            <div class="mb-md-5 mt-md-4 pb-5">
-
-                              <h2 class="fw-bold mb-2 text-uppercase">Entrar</h2>
-                              <p class="text-white-50 mb-5">Entre com sua matrícula e senha!</p>
-
-                              <div>
-                                <div class="form-outline form-white mb-4">
-                                  <input SIZE=8 MAXLENGTH=8 type="text" id="matricula" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="typeTextX" class="form-control form-control-lg" name="matricula"/>
-                                  <label class="form-label" for="typeTextX">Matrícula</label>
-                                </div>
-                                <div class="form-outline form-white mb-4">
-                                  <input type="password" id="typePasswordX" class="form-control form-control-lg" SIZE=15 MAXLENGTH=15/ name="senha">
-                                  <label class="form-label" for="typePasswordX">Senha</label>
-                                </div>
-                                <!-- JavaScript para Login -->
-                                <script>
-                                  
-                              </script>
-                              </div>
-
-                              <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Esqueceu a senha?</a></p>
-
-                              <button class="btn btn-outline-light btn-lg px-5" type="submit" action="/add" method="POST" name="act" value="entrar">Entrar</button>
-
-                            </div>
-                            <div>
-                              <p class="mb-0"><a class="text-white-50 fw-bold" data-bs-toggle="modal" data-bs-target="#modalId">Registre-se aqui!</a> <br> (Somente alunos)
-                              </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalTitleId">Registre-se</h5>
-                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-              </div>
-              <div class="modal-body">
-                <section class="vh-100 gradient-custom">
-                  <div class="container-fluid py-5 h-100">
-                    <div class="row d-flex justify-content-center align-items-center h-100">
-                      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                        <div class="card bg-dark text-white" style="border-radius: 1rem;">
-                          <div class="card-body p-2 text-center">
-                            <h2 class="fw-bold mb-2 text-uppercase">CADASTRAR</h2>
-                            <p class="text-white-50 mb-5 mt-2">Cadastre sua matrícula e senha!</p>
-                            <div>
-                            <div class="form-outline form-white mb-4">
-                              <input SIZE=8 MAXLENGTH=8 type="text" id="matricula" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="typeTextX" class="form-control form-control-lg" name="matricula"/>
-                              <label class="form-label" for="typeTextX">Matrícula</label>
-                            </div>
-                            <div class="form-outline form-white mb-4">
-                              <input type="password" id="typePasswordX" class="form-control form-control-lg" SIZE=15 MAXLENGTH=15/ name="senha">
-                              <label class="form-label" for="typePasswordX">Senha</label>
-                            </div>
-                            <button class="btn btn-outline-light btn-lg px-5" type="submit" action="/add" method="POST" name="act" value="entrar">Registrar</button>
-                          </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                  </div>
-                </section>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </nav>
-</header>
+  </header>
   <main>
     <div class="container">
         <div class="row justify-content-center align-items-center g-2">
@@ -201,7 +96,7 @@
               </a>
             </div>
             <div class="col-12 col-md-6 col-lg-3" id="carde">
-              <a href="#" style="text-decoration:none">
+              <a href="https://www.linkedin.com/in/erick-soares316" style="text-decoration:none">
                 <div class="card">
                     <img class="card-img-top" src="../Imagens/Alunos/Erick.jpg" alt="Foto de Erick Soares">
                     <div class="card-body">
@@ -329,7 +224,7 @@
         </a>
       </div>
       <div class="col-12 col-md-6 col-lg-3" id="carde">
-        <a href="#" style="text-decoration:none">
+        <a href="https://www.linkedin.com/in/lethicia-sizo" style="text-decoration:none">
           <div class="card">
               <img class="card-img-top" src="../Imagens/Alunos/aluno-silhueta.png" alt="Foto de Lethicia Sizo">
               <div class="card-body">
@@ -340,7 +235,7 @@
         </a>
       </div>
         <div class="col-12 col-md-6 col-lg-3" id="carde">
-          <a href="#" style="text-decoration:none">
+          <a href="https://www.linkedin.com/in/ulissesguima3 " style="text-decoration:none">
             <div class="card">
                 <img class="card-img-top" src="../Imagens/Alunos/Ulisses.jpeg" alt="Foto de Ulisses Barbosa">
                 <div class="card-body">
@@ -376,9 +271,9 @@
         </a>
       </div>
       <div class="col-12 col-md-6 col-lg-3" id="carde">
-        <a href="#" style="text-decoration:none">
+        <a href="https://www.linkedin.com/in/jvsantos7" style="text-decoration:none">
           <div class="card">
-              <img class="card-img-top" src="../Imagens/Alunos/JV.jpeg" alt="Foto de João Santos">
+              <img class="card-img-top" src="../Imagens/Alunos/JV.png" alt="Foto de João Santos">
               <div class="card-body">
                   <h4 class="card-title">João Santos</h4>
                   <p class="card-text">Aluno &#128104;&#8205;&#127891;</p>
@@ -452,42 +347,44 @@
       <div class="col-12 col-md-6 col-lg-3" id="carde">
         <a href="#" style="text-decoration:none">
           <div class="card">
+            <div class="ratio ratio-4x3">
+              <img class="card-img-top" src="../Imagens/Alunos/Marcelo.jpeg" alt="Foto de Marcelo Tavares" style="object-fit: cover;">
+            </div>  
+              <div class="card-body">
+                  <h4 class="card-title">Marcelo Tavares</h4>
+                  <p class="card-text">Aluno &#128104;&#8205;&#127891;</p>
+              </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3" id="carde">
+        <a href="www.linkedin.com/in/hevertonrubens" style="text-decoration:none">
+          <div class="card">
             <img class="card-img-top" src="../Imagens/Alunos/aluno-silhueta.png" alt="Foto de ">
             <div class="card-body">
-              <h4 class="card-title">Nome</h4>
+              <h4 class="card-title">Heverton Rúbens</h4>
               <p class="card-text">Aluno &#128104;&#8205;&#127891;</p>
             </div>
           </div>
         </a>
       </div>
       <div class="col-12 col-md-6 col-lg-3" id="carde">
-        <a href="#" style="text-decoration:none">
+        <a href="https://www.linkedin.com/in/nildo-dos-santos-e-santos-0293a7247" style="text-decoration:none">
           <div class="card">
-            <img class="card-img-top" src="../Imagens/Alunos/aluno-silhueta.png" alt="Foto de ">
+            <img class="card-img-top" src="../Imagens/Alunos/aluno-silhueta.png" alt="Foto de Nildo dos Santos">
             <div class="card-body">
-              <h4 class="card-title">Nome</h4>
+              <h4 class="card-title">Nildo dos Santos</h4>
               <p class="card-text">Aluno &#128104;&#8205;&#127891;</p>
             </div>
           </div>
         </a>
       </div>
       <div class="col-12 col-md-6 col-lg-3" id="carde">
-        <a href="#" style="text-decoration:none">
+        <a href="https://www.linkedin.com/in/andersonlimaramos/" style="text-decoration:none">
           <div class="card">
-            <img class="card-img-top" src="../Imagens/Alunos/aluno-silhueta.png" alt="Foto de ">
+            <img class="card-img-top" src="../Imagens/Alunos/aluno-silhueta.png" alt="Foto de Anderson Lima">
             <div class="card-body">
-              <h4 class="card-title">Nome</h4>
-              <p class="card-text">Aluno &#128104;&#8205;&#127891;</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-12 col-md-6 col-lg-3" id="carde">
-        <a href="#" style="text-decoration:none">
-          <div class="card">
-            <img class="card-img-top" src="../Imagens/Alunos/aluno-silhueta.png" alt="Foto de ">
-            <div class="card-body">
-              <h4 class="card-title">Nome</h4>
+              <h4 class="card-title">Anderson Lima</h4>
               <p class="card-text">Aluno &#128104;&#8205;&#127891;</p>
             </div>
           </div>
@@ -496,22 +393,22 @@
     </div>
     <div class="row">
       <div class="col-12 col-md-6 col-lg-3" id="carde">
-        <a href="#" style="text-decoration:none">
+        <a href="https://www.linkedin.com/in/rick-bryan" style="text-decoration:none">
           <div class="card">
-            <img class="card-img-top" src="../Imagens/Alunos/aluno-silhueta.png" alt="Foto de ">
+            <img class="card-img-top" src="../Imagens/Alunos/aluno-silhueta.png" alt="Foto de Rick Bryan">
             <div class="card-body">
-              <h4 class="card-title">Nome</h4>
+              <h4 class="card-title">Rick Bryan</h4>
               <p class="card-text">Aluno &#128104;&#8205;&#127891;</p>
             </div>
           </div>
         </a>
       </div>
       <div class="col-12 col-md-6 col-lg-3" id="carde">
-        <a href="#" style="text-decoration:none">
+        <a href="https://www.linkedin.com/in/marcoss-paulo" style="text-decoration:none">
           <div class="card">
-            <img class="card-img-top" src="../Imagens/Alunos/aluno-silhueta.png" alt="Foto de ">
+            <img class="card-img-top" src="../Imagens/Alunos/aluno-silhueta.png" alt="Foto de Marcos Paulo">
             <div class="card-body">
-              <h4 class="card-title">Nome</h4>
+              <h4 class="card-title">Marcos Paulo</h4>
               <p class="card-text">Aluno &#128104;&#8205;&#127891;</p>
             </div>
           </div>
@@ -955,21 +852,32 @@
       </div>
     </div>
   </main>
-  <footer>
+  <footer class="footer navbar-fixed-bottom">
     <div class="container">
-        <ul class="nav justify-content-center  ">
-            <li class="nav-item">
-                <a class="nav-link active" href="https://vestibular.unama.br/curso/85/1275/3/cst-analise-e-desenvolvimento-de-sistemas/Bel%C3%A9m-PA" aria-current="page" target="_blank">UNAMA-ADS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/leonrdo-costa/" target="_blank">Autor do Site</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://drive.google.com/drive/folders/1uBcQPhmuarYJKiqlt966aYAXbdw3e90P?usp=sharing" target="_blank">Google Drive</a>
-            </li>
-        </ul>
-      </div>
-    </footer>
+      <ul class="nav justify-content-center  ">
+          <li class="nav-item">
+              <a class="nav-link active" href="https://vestibular.unama.br/curso/85/1275/3/cst-analise-e-desenvolvimento-de-sistemas/Bel%C3%A9m-PA" aria-current="page" target="_blank">UNAMA-ADS</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/leonrdo-costa/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Leonardo Costa">Autor do Site</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="https://drive.google.com/drive/folders/1uBcQPhmuarYJKiqlt966aYAXbdw3e90P?usp=sharing" target="_blank">Google Drive</a>
+          </li>
+      </ul>
+    </div> 
+    <section class="contato">
+      <h2>Contato</h2>
+      <ul>
+        <li>E-mail: <a href="mailto:leonardoabreu1212@gmail.com">leonardoabreu1212@gmail.com</a></li>
+        <li>Telefone: <a href="tel:+5591988458968">91 9 8845-8968</a></li>
+        <li>Facebook: <a href="https://www.facebook.com/l3ocosta" target="_blank" rel="noopener noreferrer">Leonardo Costa</a></li>
+        <li>Instagram: <a href="https://www.instagram.com/leonrdo_mtheus/" target="_blank" rel="noopener noreferrer">@leonrdo_mtheus</a></li>
+        <li>YouTube: <a href="https://www.youtube.com/channel/UCBirplex5Xzxf1BOVkuKr2g" target="_blank" rel="noopener noreferrer">Leonardo Matheus</a></li>
+
+      </ul>
+    </section>
+  </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
